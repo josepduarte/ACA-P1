@@ -1,5 +1,5 @@
 Flow report for CRC16_polynomial_sol
-Mon Nov 20 21:48:34 2017
+Mon Nov 20 22:04:57 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,13 +41,13 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Nov 20 21:48:34 2017       ;
+; Flow Status                        ; Successful - Mon Nov 20 22:04:57 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; CRC16_polynomial_sol                        ;
 ; Top-level Entity Name              ; CRC16_polynomial_sol                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 20 / 6,272 ( < 1 % )                        ;
-;     Total combinational functions  ; 20 / 6,272 ( < 1 % )                        ;
+; Total logic elements               ; 17 / 6,272 ( < 1 % )                        ;
+;     Total combinational functions  ; 17 / 6,272 ( < 1 % )                        ;
 ;     Dedicated logic registers      ; 0 / 6,272 ( 0 % )                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 25 / 92 ( 27 % )                            ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+----------------------+
 ; Option            ; Setting              ;
 +-------------------+----------------------+
-; Start date & time ; 11/20/2017 21:47:56  ;
+; Start date & time ; 11/20/2017 22:04:19  ;
 ; Main task         ; Compilation          ;
 ; Revision Name     ; CRC16_polynomial_sol ;
 +-------------------+----------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 238170563353626.151121447606360        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 238170563353626.151121545911388        ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -89,13 +89,13 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 675 MB              ; 00:00:28                           ;
-; Fitter                    ; 00:00:04     ; 1.0                     ; 1368 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 674 MB              ; 00:00:28                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 1369 MB             ; 00:00:04                           ;
 ; Assembler                 ; 00:00:01     ; 1.0                     ; 558 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 653 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 510 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 518 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:21     ; --                      ; --                  ; 00:00:37                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 652 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 510 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 518 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:18     ; --                      ; --                  ; 00:00:37                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

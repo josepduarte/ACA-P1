@@ -136,7 +136,7 @@ r[4] => encoder_w_remainder:encoder_w_remainder.r[4]
 r[5] => encoder_w_remainder:encoder_w_remainder.r[5]
 r[6] => encoder_w_remainder:encoder_w_remainder.r[6]
 r[7] => encoder_w_remainder:encoder_w_remainder.r[7]
-error <= and_8bits:and_8bits.y
+error <= or_8bits:or_8bits.y
 
 
 |CRC16_polynomial_sol|checker:checker|encoder_w_remainder:encoder_w_remainder
@@ -167,9 +167,19 @@ a[15] => r_sol.IN1
 a[15] => r_sol.IN1
 a[15] => r_sol.IN1
 a[16] => r_sol.IN1
+a[16] => r_sol.IN1
+a[16] => r_sol.IN1
+a[17] => r_sol.IN1
+a[17] => r_sol.IN1
 a[17] => r_sol.IN1
 a[18] => r_sol.IN1
+a[18] => r_sol.IN1
+a[18] => r_sol.IN1
 a[19] => r_sol.IN1
+a[19] => r_sol.IN1
+a[19] => r_sol.IN1
+a[20] => r_sol.IN1
+a[20] => r_sol.IN1
 a[20] => r_sol.IN1
 a[21] => r_sol.IN1
 a[21] => r_sol.IN1
@@ -183,8 +193,6 @@ a[22] => r_sol.IN1
 a[22] => r_sol.IN1
 a[22] => r_sol.IN1
 a[22] => r_sol.IN1
-a[23] => r_sol.IN1
-a[23] => r_sol.IN1
 a[23] => r_sol.IN1
 a[23] => r_sol.IN1
 a[23] => r_sol.IN1
@@ -208,7 +216,7 @@ r_sol[6] <= r_sol.DB_MAX_OUTPUT_PORT_TYPE
 r_sol[7] <= r_sol.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CRC16_polynomial_sol|checker:checker|AND_8bits:and_8bits
+|CRC16_polynomial_sol|checker:checker|OR_8bits:or_8bits
 x[0] => y.IN1
 x[1] => y.IN1
 x[2] => y.IN1

@@ -36,10 +36,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "error",
-					"strict" : false
-				},
-				{
 					"name" : "a[6]",
 					"strict" : false
 				},
