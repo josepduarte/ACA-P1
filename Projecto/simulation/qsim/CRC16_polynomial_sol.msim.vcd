@@ -3,7 +3,7 @@ $comment
 		vcd file CRC16_polynomial_sol.msim.vcd -direction
 $end
 $date
-	Mon Nov 20 13:13:16 2017
+	Mon Nov 20 21:48:35 2017
 $end
 $version
 	ModelSim Version 10.5b
@@ -83,41 +83,45 @@ $var wire 1 a \r[5]~output_o\ $end
 $var wire 1 b \r[6]~output_o\ $end
 $var wire 1 c \r[7]~output_o\ $end
 $var wire 1 d \error~output_o\ $end
-$var wire 1 e \a[3]~input_o\ $end
-$var wire 1 f \a[6]~input_o\ $end
-$var wire 1 g \a[1]~input_o\ $end
-$var wire 1 h \a[0]~input_o\ $end
-$var wire 1 i \a[13]~input_o\ $end
-$var wire 1 j \encoder|r[0]~0_combout\ $end
-$var wire 1 k \a[14]~input_o\ $end
-$var wire 1 l \a[7]~input_o\ $end
-$var wire 1 m \a[15]~input_o\ $end
-$var wire 1 n \encoder|r[6]~1_combout\ $end
-$var wire 1 o \a[2]~input_o\ $end
-$var wire 1 p \a[4]~input_o\ $end
-$var wire 1 q \a[5]~input_o\ $end
-$var wire 1 r \encoder|r[5]~2_combout\ $end
-$var wire 1 s \encoder|r~3_combout\ $end
-$var wire 1 t \encoder|r[2]~4_combout\ $end
-$var wire 1 u \a[8]~input_o\ $end
-$var wire 1 v \encoder|r~5_combout\ $end
-$var wire 1 w \encoder|r[7]~7_combout\ $end
-$var wire 1 x \a[9]~input_o\ $end
-$var wire 1 y \encoder|r~6_combout\ $end
-$var wire 1 z \encoder|r[4]~8_combout\ $end
-$var wire 1 { \a[10]~input_o\ $end
-$var wire 1 | \a[11]~input_o\ $end
-$var wire 1 } \encoder|r[6]~9_combout\ $end
-$var wire 1 ~ \a[12]~input_o\ $end
+$var wire 1 e \a[15]~input_o\ $end
+$var wire 1 f \a[7]~input_o\ $end
+$var wire 1 g \a[8]~input_o\ $end
+$var wire 1 h \a[14]~input_o\ $end
+$var wire 1 i \encoder|r[1]~0_combout\ $end
+$var wire 1 j \a[13]~input_o\ $end
+$var wire 1 k \a[1]~input_o\ $end
+$var wire 1 l \a[3]~input_o\ $end
+$var wire 1 m \a[0]~input_o\ $end
+$var wire 1 n \encoder|r[0]~1_combout\ $end
+$var wire 1 o \a[6]~input_o\ $end
+$var wire 1 p \a[9]~input_o\ $end
+$var wire 1 q \a[4]~input_o\ $end
+$var wire 1 r \a[2]~input_o\ $end
+$var wire 1 s \encoder|r[1]~2_combout\ $end
+$var wire 1 t \encoder|r[4]~3_combout\ $end
+$var wire 1 u \a[5]~input_o\ $end
+$var wire 1 v \encoder|r[2]~4_combout\ $end
+$var wire 1 w \a[10]~input_o\ $end
+$var wire 1 x \encoder|r[2]~5_combout\ $end
+$var wire 1 y \a[11]~input_o\ $end
+$var wire 1 z \encoder|r[5]~6_combout\ $end
+$var wire 1 { \encoder|r[3]~7_combout\ $end
+$var wire 1 | \encoder|r[6]~8_combout\ $end
+$var wire 1 } \a[12]~input_o\ $end
+$var wire 1 ~ \encoder|r[4]~9_combout\ $end
 $var wire 1 !! \encoder|r[7]~10_combout\ $end
-$var wire 1 "! \encoder|r\ [7] $end
-$var wire 1 #! \encoder|r\ [6] $end
-$var wire 1 $! \encoder|r\ [5] $end
-$var wire 1 %! \encoder|r\ [4] $end
-$var wire 1 &! \encoder|r\ [3] $end
-$var wire 1 '! \encoder|r\ [2] $end
-$var wire 1 (! \encoder|r\ [1] $end
-$var wire 1 )! \encoder|r\ [0] $end
+$var wire 1 "! \encoder|r[7]~11_combout\ $end
+$var wire 1 #! \checker|and_8bits|y~1_combout\ $end
+$var wire 1 $! \checker|and_8bits|y~0_combout\ $end
+$var wire 1 %! \checker|and_8bits|y~2_combout\ $end
+$var wire 1 &! \encoder|r\ [7] $end
+$var wire 1 '! \encoder|r\ [6] $end
+$var wire 1 (! \encoder|r\ [5] $end
+$var wire 1 )! \encoder|r\ [4] $end
+$var wire 1 *! \encoder|r\ [3] $end
+$var wire 1 +! \encoder|r\ [2] $end
+$var wire 1 ,! \encoder|r\ [1] $end
+$var wire 1 -! \encoder|r\ [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -170,6 +174,10 @@ x<
 0}
 0~
 0!!
+0"!
+0#!
+0$!
+0%!
 0!
 0"
 0#
@@ -210,14 +218,14 @@ x<
 0X
 0Y
 0Z
-0"!
-x#!
-0$!
-x%!
 0&!
-x'!
+0'!
 0(!
-0)!
+x)!
+x*!
+x+!
+0,!
+0-!
 02
 03
 04
@@ -230,61 +238,63 @@ $end
 #40000
 10
 1R
-1h
-1j
-1s
-1y
+1m
+1n
+1v
+1|
 1"!
-1z
-1}
-1t
-1)!
-1c
-1S
+1&!
+1~
+1'!
+1x
+1-!
 1\
 1^
 1b
 1`
-12
+1c
 1Z
 1X
 1T
 1V
+1S
 19
 17
 15
 13
+12
 #80000
 1/
 1Q
-1g
-0j
+1k
+0n
+1s
+0v
+1z
+0|
+0~
+0'!
+1{
 1(!
-0s
-1v
-0y
-0z
-0}
-1&!
-1$!
-0t
-0)!
-1]
-1Y
+0x
+1,!
+0-!
 0\
+1]
 0^
 1a
 1_
 0b
 0`
-18
 0Z
+1Y
 0X
 1U
 1W
 0T
 0V
 09
+18
 07
 16
 05
@@ -293,33 +303,34 @@ $end
 #120000
 1.
 1P
-1o
-0(!
-1s
-0v
-1y
-1!!
+1r
+0s
+1v
+0z
+1|
 0"!
-1z
-1}
 0&!
-0$!
-1t
+1~
+1'!
+0{
+0(!
+1x
+0,!
 0]
-0Y
 1^
 0a
 0_
 1b
 1`
 0c
-08
+0Y
 1X
 0U
 0W
 1T
 1V
 0S
+08
 17
 06
 15
@@ -329,252 +340,288 @@ $end
 #160000
 1-
 1O
-1e
-1)!
-1v
-1&!
-1$!
+1l
+1n
+1z
+1{
+1(!
+1-!
 1\
-1Z
 1a
 1_
-19
+1Z
 1U
 1W
+19
 16
 14
 #200000
 1,
 1N
-1p
-1(!
-0y
-0z
-0}
+1q
+1s
+0|
+0~
+0'!
+1,!
 1]
-1Y
 0b
 0`
-18
+1Y
 0T
 0V
+18
 05
 03
 #240000
 1+
 1M
-1q
-1r
-0!!
-1"!
-0t
-0$!
-0a
+1u
+0v
+1!!
+0(!
+1&!
+0x
 0^
 1c
-0U
+0a
 0X
 1S
+0U
 07
 04
 12
 #280000
 1*
 1L
-1f
-1j
+1o
+0-!
 1t
+0{
+1"!
 0&!
-1w
-1z
-0"!
-0)!
+1x
+1~
 0_
-1^
-0W
-1X
 0\
-0c
-1`
-17
-06
+0W
 0Z
-0S
-1V
+1`
+1^
+0c
 09
+06
+1V
+1X
+0S
+17
 15
 02
 #320000
 1)
 1K
-1l
-1)!
-1n
-0r
-1!!
-1"!
-0t
-1$!
-0(!
+1f
+1i
+0x
+0!!
+1'!
+1(!
 1&!
-1}
-1\
-1Z
+1-!
+0,!
+1{
 1b
+0^
+1T
+0X
 1_
 0]
-1a
-0^
+1\
 1c
-19
-1T
+1a
+07
+13
 1W
 0Y
-1U
-0X
+1Z
 1S
+1U
+19
 08
-07
 16
 14
-13
 12
 #360000
 1(
 1J
-1u
-0&!
+1g
+0i
+0-!
+1,!
+0{
 0_
+1]
+0\
 0W
+1Y
+0Z
+09
+18
 06
 #400000
 1'
 1I
+1p
+0s
+0t
 1x
-0z
+0~
+0,!
+0]
 0`
+1^
+0Y
 0V
+1X
+08
+17
 05
 #440000
 1&
 1H
+1w
+0x
+0z
 1{
-0$!
+0(!
+0^
+0X
 0a
+1_
+07
 0U
+1W
+16
 04
 #480000
 1%
 1G
-1|
-0}
+1y
+0{
+1~
+0'!
 0b
+1`
+0_
 0T
+1V
+0W
+06
+15
 03
 #520000
 1$
 1F
-1~
-0!!
-0"!
+1}
+0~
+1(!
+0&!
 0c
+1a
+0`
 0S
+1U
+0V
+05
+14
 02
 #560000
 1#
 1E
-1i
-0j
+1j
+0n
 1t
-0w
-1}
-1z
-1"!
-0)!
-1b
-1^
-1T
-1X
-0\
+0(!
+1&!
+1x
+1~
+1-!
 1c
-1`
-17
-13
-0Z
+0a
 1S
-1V
-09
-15
+0U
+1\
+1`
+1^
+04
 12
+1Z
+1V
+1X
+19
+17
+15
 #600000
 1"
 1D
-1k
-1)!
-0n
-1r
-0z
+1h
+1i
 0t
-1$!
+1!!
 1(!
-1&!
-0}
-0`
-1\
-0V
-1Z
-0b
+0&!
+0x
+0~
+0-!
+1,!
+1{
 1_
 1]
-1a
+0\
+0`
 0^
-19
-05
-0T
+0c
+1a
 1W
 1Y
-1U
+0Z
+0V
 0X
+0S
+1U
+09
 18
 07
 16
+05
 14
-03
+02
 #640000
 1!
 1C
-1m
-1n
-0r
-1w
-1z
-0"!
-1t
-0$!
+1e
+0i
+0!!
 0(!
-0&!
-1}
-1b
+1&!
+1-!
+0,!
+0{
 0_
 0]
+1\
+1c
 0a
-1^
-0c
-1`
-1T
 0W
 0Y
+1Z
+1S
 0U
-1X
-0S
-1V
+19
 08
-17
 06
-15
 04
-13
-02
+12
 #680000
 0!
 0"
@@ -608,64 +655,29 @@ $end
 0E
 0D
 0C
-0m
-0k
-0i
-0~
-0|
-0{
-0x
-0u
-0l
-0f
-0q
-0p
 0e
-0o
-0g
 0h
-1"!
-0s
-0v
-1(!
-1$!
-0)!
-0n
-0w
-0z
-0"!
-0(!
+0j
 0}
-0$!
-0t
+0y
+0w
+0p
+0g
+0f
+0o
+0u
+0q
+0l
+0r
+0k
+0m
+0-!
+0"!
+0&!
 0\
-1a
-1]
-1c
 0Z
-1U
-1Y
-1S
-0^
-0a
-0b
-0]
 0c
-0`
 09
-18
-14
-12
-0X
-0U
-0T
-0Y
 0S
-0V
-08
-07
-05
-04
-03
 02
 #800000
