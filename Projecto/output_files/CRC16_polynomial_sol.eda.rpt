@@ -1,5 +1,5 @@
 EDA Netlist Writer report for CRC16_polynomial_sol
-Tue Nov 21 04:04:26 2017
+Tue Nov 21 14:40:14 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Nov 21 04:04:26 2017 ;
+; EDA Netlist Writer Status ; Successful - Tue Nov 21 14:40:14 2017 ;
 ; Revision Name             ; CRC16_polynomial_sol                  ;
 ; Top-level Entity Name     ; CRC16_polynomial_sol                  ;
 ; Family                    ; Cyclone IV E                          ;
@@ -51,8 +51,7 @@ agreement for further details.
 ; Option                                                                                            ; Setting                ;
 +---------------------------------------------------------------------------------------------------+------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
-; Generate functional simulation netlist                                                            ; Off                    ;
-; Time scale                                                                                        ; 1 ps                   ;
+; Generate functional simulation netlist                                                            ; On                     ;
 ; Truncate long hierarchy paths                                                                     ; Off                    ;
 ; Map illegal HDL characters                                                                        ; Off                    ;
 ; Flatten buses into individual nodes                                                               ; Off                    ;
@@ -67,20 +66,13 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+----------------------------------------------------------------------------------+
-; Simulation Generated Files                                                       ;
-+----------------------------------------------------------------------------------+
-; Generated Files                                                                  ;
-+----------------------------------------------------------------------------------+
-; C:/ACA/Projecto/simulation/qsim//CRC16_polynomial_sol_6_1200mv_85c_slow.vho      ;
-; C:/ACA/Projecto/simulation/qsim//CRC16_polynomial_sol_6_1200mv_0c_slow.vho       ;
-; C:/ACA/Projecto/simulation/qsim//CRC16_polynomial_sol_min_1200mv_0c_fast.vho     ;
-; C:/ACA/Projecto/simulation/qsim//CRC16_polynomial_sol.vho                        ;
-; C:/ACA/Projecto/simulation/qsim//CRC16_polynomial_sol_6_1200mv_85c_vhd_slow.sdo  ;
-; C:/ACA/Projecto/simulation/qsim//CRC16_polynomial_sol_6_1200mv_0c_vhd_slow.sdo   ;
-; C:/ACA/Projecto/simulation/qsim//CRC16_polynomial_sol_min_1200mv_0c_vhd_fast.sdo ;
-; C:/ACA/Projecto/simulation/qsim//CRC16_polynomial_sol_vhd.sdo                    ;
-+----------------------------------------------------------------------------------+
++-----------------------------------------------------------+
+; Simulation Generated Files                                ;
++-----------------------------------------------------------+
+; Generated Files                                           ;
++-----------------------------------------------------------+
+; C:/ACA/Projecto/simulation/qsim//CRC16_polynomial_sol.vho ;
++-----------------------------------------------------------+
 
 
 +-----------------------------+
@@ -103,21 +95,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Intel and sold by Intel or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Tue Nov 21 04:04:25 2017
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory=C:/ACA/Projecto/simulation/qsim/ CRC16_polynomial_sol -c CRC16_polynomial_sol
+    Info: Processing started: Tue Nov 21 14:40:14 2017
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ACA/Projecto/simulation/qsim/ CRC16_polynomial_sol -c CRC16_polynomial_sol
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file CRC16_polynomial_sol_6_1200mv_85c_slow.vho in folder "C:/ACA/Projecto/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file CRC16_polynomial_sol_6_1200mv_0c_slow.vho in folder "C:/ACA/Projecto/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file CRC16_polynomial_sol_min_1200mv_0c_fast.vho in folder "C:/ACA/Projecto/simulation/qsim//" for EDA simulation tool
 Info (204019): Generated file CRC16_polynomial_sol.vho in folder "C:/ACA/Projecto/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file CRC16_polynomial_sol_6_1200mv_85c_vhd_slow.sdo in folder "C:/ACA/Projecto/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file CRC16_polynomial_sol_6_1200mv_0c_vhd_slow.sdo in folder "C:/ACA/Projecto/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file CRC16_polynomial_sol_min_1200mv_0c_vhd_fast.sdo in folder "C:/ACA/Projecto/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file CRC16_polynomial_sol_vhd.sdo in folder "C:/ACA/Projecto/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 525 megabytes
-    Info: Processing ended: Tue Nov 21 04:04:26 2017
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 521 megabytes
+    Info: Processing ended: Tue Nov 21 14:40:14 2017
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 
