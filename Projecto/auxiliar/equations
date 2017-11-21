@@ -48,7 +48,7 @@ X14_22 	<= a(14) XOR a(22)
 	r(3) <= a(11) XOR a(14) XOR a(16) XOR a(18) XOR a(19) XOR a(23) X10_15 XOR X9_22;
 	r(2) <= a(8) XOR a(13) XOR a(14) XOR a(17) XOR a(18) XOR a(21) XOR X10_15 XOR X9_22;
 	r(1) <= a(12) XOR a(16) XOR a(17) XOR a(23) X10_15 XOR X9_22;
-	r(0) <= a(8) XOR a(11)  XOR a(15) XOR a(16) XOR a(21) XOR a(23) XOR X14_22;
+	r(0) <= a(8) XOR a(11)  XOR a(15) XOR a(16) XOR a(21) XOR a(23) XOR X9_22 XOR X14_22;
 
 3rd:
 
@@ -75,7 +75,7 @@ X8_21 	<= a(8) XOR a(21)
 	r(3) <= a(11) XOR a(14) XOR a(16) XOR a(18) XOR a(19) XOR a(23) X10_15 XOR X9_22;
 	r(2) <= a(13) XOR a(14) XOR a(17) XOR a(18) XOR X10_15 XOR X9_22 XOR X8_21;
 	r(1) <= a(12) XOR a(16) XOR a(17) XOR a(23) X10_15 XOR X9_22;
-	r(0) <= a(11)  XOR a(15) XOR a(16) XOR a(23) XOR X14_22 XOR X8_21;
+	r(0) <= a(11)  XOR a(15) XOR a(16) XOR a(23) XOR X9_22 XOR X14_22 XOR X8_21;
 
 4th:
 
@@ -113,7 +113,7 @@ X8_21 	<= a(8) XOR a(21)
 	r(3) <= a(11) XOR a(14) XOR a(16) XOR a(18) XOR a(19) XOR a(23) X10_15 XOR X9_22;
 	r(2) <= a(13) XOR a(14) XOR a(17) XOR a(18) XOR X10_15 XOR X9_22 XOR X8_21;
 	r(1) <= a(12) XOR a(16) XOR a(17) XOR a(23) X10_15 XOR X9_22;
-	r(0) <= a(11)  XOR a(15) XOR a(16) XOR a(23) XOR X14_22 XOR X8_21;
+	r(0) <= a(11)  XOR a(15) XOR a(16) XOR a(23) XOR X9_22 XOR X14_22 XOR X8_21;
 
 5th:
 
@@ -161,5 +161,5 @@ X12_19 	<= a(12) XOR a(19)
 	r(3) <= a(14) XOR a(16) XOR a(19) XOR a(23) X10_15 XOR X9_22 XOR X11_18; 
 	r(2) <= a(13) XOR a(18) XOR X10_15 XOR X9_22 XOR X8_21 XOR X14_17;
 	r(1) <= a(12) XOR a(16) XOR a(17) XOR a(23) X10_15 XOR X9_22;
-	r(0) <= a(11)  XOR a(15) XOR a(16) XOR a(23) XOR X14_22 XOR X8_21;
+	r(0) <= a(11)  XOR a(15) XOR a(16) XOR a(23) XOR X9_22 XOR X14_22 XOR X8_21;
 
