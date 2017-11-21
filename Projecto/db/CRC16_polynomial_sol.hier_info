@@ -31,15 +31,15 @@ a[14] => encoder:encoder.a[22]
 a[14] => checker:checker.a[22]
 a[15] => encoder:encoder.a[23]
 a[15] => checker:checker.a[23]
-r[0] << encoder:encoder.r[0]
-r[1] << encoder:encoder.r[1]
-r[2] << encoder:encoder.r[2]
-r[3] << encoder:encoder.r[3]
-r[4] << encoder:encoder.r[4]
-r[5] << encoder:encoder.r[5]
-r[6] << encoder:encoder.r[6]
-r[7] << encoder:encoder.r[7]
-error << checker:checker.error
+r[0] <= encoder:encoder.r[0]
+r[1] <= encoder:encoder.r[1]
+r[2] <= encoder:encoder.r[2]
+r[3] <= encoder:encoder.r[3]
+r[4] <= encoder:encoder.r[4]
+r[5] <= encoder:encoder.r[5]
+r[6] <= encoder:encoder.r[6]
+r[7] <= encoder:encoder.r[7]
+error <= checker:checker.error
 
 
 |CRC16_polynomial_sol|encoder:encoder
