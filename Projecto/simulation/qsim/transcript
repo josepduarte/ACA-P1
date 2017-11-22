@@ -1,7 +1,7 @@
 # do CRC16_polynomial_sol.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:40:16 on Nov 21,2017
+# Start time: 18:01:31 on Nov 21,2017
 # vcom -work work CRC16_polynomial_sol.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -14,20 +14,20 @@
 # -- Compiling architecture structure of hard_block
 # -- Compiling entity CRC16_polynomial_sol
 # -- Compiling architecture structure of CRC16_polynomial_sol
-# End time: 14:40:16 on Nov 21,2017, Elapsed time: 0:00:00
+# End time: 18:01:31 on Nov 21,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:40:16 on Nov 21,2017
+# Start time: 18:01:31 on Nov 21,2017
 # vcom -work work Waveform1.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity CRC16_polynomial_sol_vhd_vec_tst
 # -- Compiling architecture CRC16_polynomial_sol_arch of CRC16_polynomial_sol_vhd_vec_tst
-# End time: 14:40:16 on Nov 21,2017, Elapsed time: 0:00:00
+# End time: 18:01:31 on Nov 21,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.CRC16_polynomial_sol_vhd_vec_tst 
-# Start time: 14:40:17 on Nov 21,2017
+# Start time: 18:01:32 on Nov 21,2017
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -43,5 +43,5 @@
 # Loading cycloneive.cycloneive_io_ibuf(arch)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
 # after#33
-# End time: 14:40:17 on Nov 21,2017, Elapsed time: 0:00:00
+# End time: 18:01:32 on Nov 21,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

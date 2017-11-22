@@ -3,7 +3,7 @@ $comment
 		vcd file CRC16_polynomial_sol.msim.vcd -direction
 $end
 $date
-	Tue Nov 21 14:40:17 2017
+	Tue Nov 21 18:01:32 2017
 $end
 $version
 	ModelSim Version 10.5b
@@ -83,37 +83,37 @@ $var wire 1 a \r[5]~output_o\ $end
 $var wire 1 b \r[6]~output_o\ $end
 $var wire 1 c \r[7]~output_o\ $end
 $var wire 1 d \error~output_o\ $end
-$var wire 1 e \a[13]~input_o\ $end
-$var wire 1 f \a[6]~input_o\ $end
-$var wire 1 g \a[0]~input_o\ $end
-$var wire 1 h \encoder|r[7]~1_combout\ $end
-$var wire 1 i \a[1]~input_o\ $end
-$var wire 1 j \a[14]~input_o\ $end
-$var wire 1 k \a[15]~input_o\ $end
-$var wire 1 l \a[8]~input_o\ $end
-$var wire 1 m \encoder|r[0]~0_combout\ $end
-$var wire 1 n \a[3]~input_o\ $end
-$var wire 1 o \a[7]~input_o\ $end
-$var wire 1 p \encoder|r[0]~2_combout\ $end
-$var wire 1 q \a[4]~input_o\ $end
-$var wire 1 r \a[2]~input_o\ $end
-$var wire 1 s \encoder|r[5]~3_combout\ $end
-$var wire 1 t \encoder|s_X_16_23~combout\ $end
-$var wire 1 u \a[9]~input_o\ $end
-$var wire 1 v \a[5]~input_o\ $end
-$var wire 1 w \encoder|r[2]~4_combout\ $end
-$var wire 1 x \a[10]~input_o\ $end
-$var wire 1 y \encoder|r[2]~5_combout\ $end
+$var wire 1 e \a[7]~input_o\ $end
+$var wire 1 f \a[14]~input_o\ $end
+$var wire 1 g \a[13]~input_o\ $end
+$var wire 1 h \a[1]~input_o\ $end
+$var wire 1 i \a[0]~input_o\ $end
+$var wire 1 j \encoder|s_X_8_21_X_9_22~combout\ $end
+$var wire 1 k \a[3]~input_o\ $end
+$var wire 1 l \a[6]~input_o\ $end
+$var wire 1 m \a[8]~input_o\ $end
+$var wire 1 n \a[15]~input_o\ $end
+$var wire 1 o \encoder|r[0]~0_combout\ $end
+$var wire 1 p \encoder|r[0]~1_combout\ $end
+$var wire 1 q \a[9]~input_o\ $end
+$var wire 1 r \a[4]~input_o\ $end
+$var wire 1 s \a[2]~input_o\ $end
+$var wire 1 t \encoder|s_X_10_15_X_9_22~combout\ $end
+$var wire 1 u \encoder|s_X_16_23_X_10_15_X_9_22~combout\ $end
+$var wire 1 v \a[10]~input_o\ $end
+$var wire 1 w \a[5]~input_o\ $end
+$var wire 1 x \encoder|r[2]~2_combout\ $end
+$var wire 1 y \encoder|r[2]~3_combout\ $end
 $var wire 1 z \a[11]~input_o\ $end
-$var wire 1 { \encoder|r[3]~6_combout\ $end
-$var wire 1 | \encoder|r[4]~7_combout\ $end
-$var wire 1 } \a[12]~input_o\ $end
-$var wire 1 ~ \encoder|r[4]~8_combout\ $end
-$var wire 1 !! \encoder|r[5]~9_combout\ $end
-$var wire 1 "! \encoder|r[5]~10_combout\ $end
-$var wire 1 #! \encoder|r[6]~11_combout\ $end
-$var wire 1 $! \encoder|r[7]~12_combout\ $end
-$var wire 1 %! \encoder|r[7]~13_combout\ $end
+$var wire 1 { \encoder|s_X_11_18~combout\ $end
+$var wire 1 | \a[12]~input_o\ $end
+$var wire 1 } \encoder|r[4]~4_combout\ $end
+$var wire 1 ~ \encoder|r[4]~5_combout\ $end
+$var wire 1 !! \encoder|r[7]~6_combout\ $end
+$var wire 1 "! \encoder|r[5]~7_combout\ $end
+$var wire 1 #! \encoder|r[6]~8_combout\ $end
+$var wire 1 $! \encoder|r[7]~9_combout\ $end
+$var wire 1 %! \encoder|r[7]~10_combout\ $end
 $var wire 1 &! \encoder|r\ [7] $end
 $var wire 1 '! \encoder|r\ [6] $end
 $var wire 1 (! \encoder|r\ [5] $end
@@ -194,14 +194,6 @@ x<
 0.
 0/
 00
-02
-03
-04
-05
-06
-07
-08
-09
 0C
 0D
 0E
@@ -234,29 +226,38 @@ x)!
 x+!
 0,!
 x-!
+02
+03
+04
+05
+06
+07
+08
+09
 $end
 #40000
 10
 1R
-1g
-1h
-1w
+1i
+1j
+1x
 1'!
-1y
-1~
-1p
+1$!
 1%!
+1y
+1p
+1~
 1b
 1T
-1c
-1\
 1`
+1\
 1^
+1c
 13
-1S
-1Z
 1V
+1Z
 1X
+1S
 19
 17
 15
@@ -264,95 +265,98 @@ $end
 #80000
 1/
 1Q
-1i
-1m
-1s
-1|
+1h
+0j
+1t
 0'!
-0~
-1,!
+1u
 0y
-1*!
 1"!
 0p
+0~
+1,!
+1*!
 0b
 0T
+0`
 0\
 1a
-1_
 0^
-1]
-0`
 03
+0V
 0Z
 1U
-1W
 0X
-1Y
-0V
+1_
+1]
 09
-18
 07
-16
 05
 14
+1W
+1Y
+18
+16
 #120000
 1.
 1P
-1r
-0s
+1s
+0t
 1~
 1#!
+0$!
 0%!
 1'!
-0,!
+0u
 1y
-0*!
 0"!
-0c
+0,!
+0*!
 1`
-0S
 1V
 0a
-0_
 1^
-0]
 1b
+0c
 15
-02
 0U
-0W
 1X
-0Y
 1T
-08
+0S
+0_
+0]
 17
-06
 04
 13
+02
+0W
+0Y
+08
+06
 #160000
 1-
 1O
-1n
-1p
+1k
+1o
 1{
-1"!
 1*!
-1a
+1"!
+1p
 1\
-1U
-1Z
+1a
 1_
-19
-14
+1Z
+1U
 1W
+19
 16
+14
 #200000
 1,
 1N
-1q
+1r
 1,!
-0|
+1}
 0#!
 0'!
 0~
@@ -368,260 +372,258 @@ $end
 #240000
 1+
 1M
-1v
+1w
 0y
 1!!
-1$!
-1%!
 0"!
+1%!
 0^
 0X
-0a
 1c
+0a
 07
-0U
 1S
+0U
 04
 12
 #280000
 1*
 1L
-1f
-0h
-0w
-0{
+1l
+0o
+0x
 0*!
-1y
-1~
-0p
+0}
 0%!
+1~
+1y
+0p
 0c
-0\
-1`
-1^
 0_
 0S
-0Z
-1V
-1X
 0W
+0\
+1^
+1`
+06
+02
+0Z
+1X
+1V
 09
 17
-06
 15
-02
 #320000
 1)
 1K
-1o
+1e
 1p
-1s
+1t
 1#!
+1$!
 1%!
 1'!
-0,!
+1u
 0y
-1*!
 1"!
-1c
+0,!
+1*!
 1\
-1S
 1Z
 1a
-1_
 0^
-0]
 1b
+1c
 19
-12
 1U
-1W
 0X
-0Y
 1T
-08
+1S
+1_
+0]
 07
-16
 14
 13
+12
+1W
+0Y
+08
+16
 #360000
 1(
 1J
-1l
-0m
-1t
-0*!
+1m
+1o
+0u
 1,!
+0*!
 0p
-0_
-0W
 0\
+0_
 1]
-06
 0Z
+0W
 1Y
 09
 18
+06
 #400000
 1'
 1I
-1u
+1q
 0,!
-1w
-1y
+1x
+1}
 0~
+1y
 0]
 0Y
-0`
 1^
+0`
 08
-0V
 1X
+0V
 17
 05
 #440000
 1&
 1H
-1x
+1v
 0y
-1{
-0"!
+0{
 1*!
-0a
+0"!
 0^
-0U
 0X
+0a
 1_
 07
-04
+0U
 1W
 16
+04
 #480000
 1%
 1G
 1z
-0{
-1|
+0*!
+0}
 0#!
 0'!
 1~
-0*!
 0_
+0W
 1`
 0b
-0W
+06
 1V
 0T
-06
 15
 03
 #520000
 1$
 1F
-1}
+1|
 0~
 0!!
-0$!
-0%!
 1"!
+0%!
 0`
 0V
-1a
 0c
+1a
 05
-1U
 0S
+1U
 14
 02
 #560000
 1#
 1E
-1e
-1h
-0w
-1!!
+1g
+1j
+0x
 0"!
-1y
-1~
-1p
+0$!
 1%!
-1c
-1\
-1`
-1^
+1y
+1p
+1~
 0a
-1S
-1Z
-1V
-1X
 0U
+1`
+1\
+1^
+1c
+04
+1V
+1Z
+1X
+1S
 19
 17
 15
-04
 12
 #600000
 1"
 1D
-1j
-1m
-0s
-0|
-1$!
+1f
+0j
+0t
 0%!
-0~
-1,!
+1u
 0y
-1*!
 1"!
 0p
+0~
+1,!
+1*!
+0c
+0S
+0`
 0\
 1a
-1_
 0^
-1]
-0`
-0c
+02
+0V
 0Z
 1U
-1W
 0X
-1Y
-0V
-0S
+1_
+1]
 09
-18
 07
-16
 05
 14
-02
+1W
+1Y
+18
+16
 #640000
 1!
 1C
-1k
-0m
-0t
-0*!
-0!!
-0$!
-1%!
+1n
+0o
+0u
+1!!
 0"!
+1%!
 0,!
+0*!
 1p
-0_
-0W
 1\
+0_
 0]
-0a
 1c
-06
+0a
 1Z
+0W
 0Y
-0U
 1S
+0U
 19
 08
+06
 04
 12
 #680000
@@ -657,29 +659,37 @@ $end
 0E
 0D
 0C
-0k
-0j
-0e
-0}
-0z
-0x
-0u
-0l
-0o
+0n
 0f
+0g
+0|
+0z
 0v
 0q
-0n
+0m
+0e
+0l
+0w
 0r
-0i
-0g
+0k
+0s
 0h
+0i
 0p
+1"!
+0!!
+0"!
 0%!
-0c
+1a
 0\
-0S
+1U
 0Z
+0c
+0a
 09
+14
+0S
+0U
+04
 02
 #800000
