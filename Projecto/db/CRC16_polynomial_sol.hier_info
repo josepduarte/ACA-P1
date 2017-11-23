@@ -31,15 +31,15 @@ a[14] => encoder:encoder.a[22]
 a[14] => checker:checker.a[22]
 a[15] => encoder:encoder.a[23]
 a[15] => checker:checker.a[23]
-r[0] <= encoder:encoder.r[0]
-r[1] <= encoder:encoder.r[1]
-r[2] <= encoder:encoder.r[2]
-r[3] <= encoder:encoder.r[3]
-r[4] <= encoder:encoder.r[4]
-r[5] <= encoder:encoder.r[5]
-r[6] <= encoder:encoder.r[6]
-r[7] <= encoder:encoder.r[7]
-error <= checker:checker.error
+r[0] << encoder:encoder.r[0]
+r[1] << encoder:encoder.r[1]
+r[2] << encoder:encoder.r[2]
+r[3] << encoder:encoder.r[3]
+r[4] << encoder:encoder.r[4]
+r[5] << encoder:encoder.r[5]
+r[6] << encoder:encoder.r[6]
+r[7] << encoder:encoder.r[7]
+error << checker:checker.error
 
 
 |CRC16_polynomial_sol|encoder:encoder
@@ -169,14 +169,14 @@ r_sol[7] <= r_sol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CRC16_polynomial_sol|checker:checker|OR_8bits:or_8bits
-x[0] => y.IN1
-x[1] => y.IN1
-x[2] => y.IN1
-x[3] => y.IN1
-x[4] => y.IN1
-x[5] => y.IN1
-x[6] => y.IN0
-x[7] => y.IN1
+x[0] => tmp_4.IN0
+x[1] => tmp_4.IN1
+x[2] => tmp_3.IN0
+x[3] => tmp_3.IN1
+x[4] => tmp_2.IN0
+x[5] => tmp_2.IN1
+x[6] => tmp_1.IN0
+x[7] => tmp_1.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 

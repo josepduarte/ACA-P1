@@ -3,7 +3,7 @@ $comment
 		vcd file CRC16_polynomial_sol.msim.vcd -direction
 $end
 $date
-	Thu Nov 23 17:50:19 2017
+	Thu Nov 23 22:10:35 2017
 $end
 $version
 	ModelSim Version 10.5b

@@ -1,5 +1,5 @@
 Fitter report for CRC16_polynomial_sol
-Thu Nov 23 17:49:09 2017
+Thu Nov 23 22:29:48 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Nov 23 17:49:09 2017       ;
+; Fitter Status                      ; Successful - Thu Nov 23 22:29:48 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; CRC16_polynomial_sol                        ;
 ; Top-level Entity Name              ; CRC16_polynomial_sol                        ;
@@ -1027,9 +1027,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/ACA/Projecto/output_files/CRC16_polynomial_sol.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1368 megabytes
-    Info: Processing ended: Thu Nov 23 17:49:09 2017
-    Info: Elapsed time: 00:00:05
+    Info: Peak virtual memory: 1366 megabytes
+    Info: Processing ended: Thu Nov 23 22:29:48 2017
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 
 
