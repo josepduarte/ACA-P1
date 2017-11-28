@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CRC16_polynomial_sol
-Thu Nov 23 22:29:44 2017
+Tue Nov 28 13:03:35 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 23 22:29:44 2017       ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 28 13:03:35 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; CRC16_polynomial_sol                        ;
 ; Top-level Entity Name              ; CRC16_polynomial_sol                        ;
@@ -52,7 +52,7 @@ agreement for further details.
 ;     Total combinational functions  ; 18                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 25                                          ;
+; Total pins                         ; 26                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -169,6 +169,7 @@ agreement for further details.
 ; CRC16_polynomial_sol.vhd         ; yes             ; User VHDL File  ; C:/ACA/Projecto/CRC16_polynomial_sol.vhd ;         ;
 ; encoder.vhd                      ; yes             ; User VHDL File  ; C:/ACA/Projecto/encoder.vhd              ;         ;
 ; checker.vhd                      ; yes             ; User VHDL File  ; C:/ACA/Projecto/checker.vhd              ;         ;
+; change_1_bit.vhd                 ; yes             ; User VHDL File  ; C:/ACA/Projecto/change_1_bit.vhd         ;         ;
 +----------------------------------+-----------------+-----------------+------------------------------------------+---------+
 
 
@@ -193,14 +194,14 @@ agreement for further details.
 ;     -- Dedicated logic registers            ; 0          ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 25         ;
+; I/O pins                                    ; 26         ;
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; a[6]~input ;
 ; Maximum fan-out                             ; 5          ;
-; Total fan-out                               ; 98         ;
-; Average fan-out                             ; 1.44       ;
+; Total fan-out                               ; 99         ;
+; Average fan-out                             ; 1.41       ;
 +---------------------------------------------+------------+
 
 
@@ -209,7 +210,7 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Entity Name          ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+----------------------+--------------+
-; |CRC16_polynomial_sol      ; 18 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |CRC16_polynomial_sol                 ; CRC16_polynomial_sol ; work         ;
+; |CRC16_polynomial_sol      ; 18 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 26   ; 0            ; |CRC16_polynomial_sol                 ; CRC16_polynomial_sol ; work         ;
 ;    |encoder:encoder|       ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CRC16_polynomial_sol|encoder:encoder ; encoder              ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -235,16 +236,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 25                          ;
-; cycloneiii_lcell_comb ; 19                          ;
-;     normal            ; 19                          ;
-;         0 data inputs ; 1                           ;
+; boundary_port         ; 26                          ;
+; cycloneiii_lcell_comb ; 20                          ;
+;     normal            ; 20                          ;
+;         0 data inputs ; 2                           ;
 ;         2 data inputs ; 1                           ;
 ;         3 data inputs ; 5                           ;
 ;         4 data inputs ; 12                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.17                        ;
+; Average LUT depth     ; 2.11                        ;
 +-----------------------+-----------------------------+
 
 
@@ -253,7 +254,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -263,12 +264,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Nov 23 22:29:29 2017
+    Info: Processing started: Tue Nov 28 13:03:21 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CRC16_polynomial_sol -c CRC16_polynomial_sol
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file crc16_polynomial_sol.vhd
-    Info (12022): Found design unit 1: CRC16_polynomial_sol-structure File: C:/ACA/Projecto/CRC16_polynomial_sol.vhd Line: 11
+    Info (12022): Found design unit 1: CRC16_polynomial_sol-structure File: C:/ACA/Projecto/CRC16_polynomial_sol.vhd Line: 12
     Info (12023): Found entity 1: CRC16_polynomial_sol File: C:/ACA/Projecto/CRC16_polynomial_sol.vhd Line: 4
 Warning (12019): Can't analyze file -- file top.vhd is missing
 Warning (12019): Can't analyze file -- file CRC16_divider.vhd is missing
@@ -283,24 +284,29 @@ Info (12021): Found 6 design units, including 3 entities, in source file checker
     Info (12023): Found entity 1: encoder_w_remainder File: C:/ACA/Projecto/checker.vhd Line: 3
     Info (12023): Found entity 2: OR_8bits File: C:/ACA/Projecto/checker.vhd Line: 118
     Info (12023): Found entity 3: checker File: C:/ACA/Projecto/checker.vhd Line: 146
+Info (12021): Found 2 design units, including 1 entities, in source file change_1_bit.vhd
+    Info (12022): Found design unit 1: change_1_bit-logic File: C:/ACA/Projecto/change_1_bit.vhd Line: 8
+    Info (12023): Found entity 1: change_1_bit File: C:/ACA/Projecto/change_1_bit.vhd Line: 3
 Info (12127): Elaborating entity "CRC16_polynomial_sol" for the top level hierarchy
-Info (12128): Elaborating entity "encoder" for hierarchy "encoder:encoder" File: C:/ACA/Projecto/CRC16_polynomial_sol.vhd Line: 14
-Info (12128): Elaborating entity "checker" for hierarchy "checker:checker" File: C:/ACA/Projecto/CRC16_polynomial_sol.vhd Line: 18
+Info (12128): Elaborating entity "encoder" for hierarchy "encoder:encoder" File: C:/ACA/Projecto/CRC16_polynomial_sol.vhd Line: 16
+Info (12128): Elaborating entity "checker" for hierarchy "checker:checker" File: C:/ACA/Projecto/CRC16_polynomial_sol.vhd Line: 20
 Info (12128): Elaborating entity "encoder_w_remainder" for hierarchy "checker:checker|encoder_w_remainder:encoder_w_remainder" File: C:/ACA/Projecto/checker.vhd Line: 156
 Info (12128): Elaborating entity "OR_8bits" for hierarchy "checker:checker|OR_8bits:or_8bits" File: C:/ACA/Projecto/checker.vhd Line: 162
+Info (12128): Elaborating entity "change_1_bit" for hierarchy "change_1_bit:change_1_bit" File: C:/ACA/Projecto/CRC16_polynomial_sol.vhd Line: 26
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "error" is stuck at GND File: C:/ACA/Projecto/CRC16_polynomial_sol.vhd Line: 7
+    Warning (13410): Pin "error_checker1" is stuck at GND File: C:/ACA/Projecto/CRC16_polynomial_sol.vhd Line: 7
+    Warning (13410): Pin "error_checker2" is stuck at VCC File: C:/ACA/Projecto/CRC16_polynomial_sol.vhd Line: 8
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 43 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 44 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
-    Info (21059): Implemented 9 output pins
+    Info (21059): Implemented 10 output pins
     Info (21061): Implemented 18 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 673 megabytes
-    Info: Processing ended: Thu Nov 23 22:29:44 2017
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:31
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 672 megabytes
+    Info: Processing ended: Tue Nov 28 13:03:35 2017
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:29
 
 

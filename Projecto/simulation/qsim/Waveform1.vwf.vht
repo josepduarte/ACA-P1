@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/23/2017 22:10:31"
+-- Generated on "11/28/2017 13:04:57"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          CRC16_polynomial_sol
 -- 
@@ -35,12 +35,14 @@ ARCHITECTURE CRC16_polynomial_sol_arch OF CRC16_polynomial_sol_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL a : STD_LOGIC_VECTOR(15 DOWNTO 0);
-SIGNAL error : STD_LOGIC;
+SIGNAL error_checker1 : STD_LOGIC;
+SIGNAL error_checker2 : STD_LOGIC;
 SIGNAL r : STD_LOGIC_VECTOR(7 DOWNTO 0);
 COMPONENT CRC16_polynomial_sol
 	PORT (
 	a : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-	error : OUT STD_LOGIC;
+	error_checker1 : OUT STD_LOGIC;
+	error_checker2 : OUT STD_LOGIC;
 	r : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
 	);
 END COMPONENT;
@@ -49,7 +51,8 @@ BEGIN
 	PORT MAP (
 -- list connections between master ports and signals
 	a => a,
-	error => error,
+	error_checker1 => error_checker1,
+	error_checker2 => error_checker2,
 	r => r
 	);
 -- a[15]

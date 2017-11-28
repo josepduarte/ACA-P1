@@ -1,45 +1,62 @@
 |CRC16_polynomial_sol
 a[0] => encoder:encoder.a[8]
 a[0] => checker:checker.a[8]
+a[0] => change_1_bit:change_1_bit.x[0]
 a[1] => encoder:encoder.a[9]
 a[1] => checker:checker.a[9]
+a[1] => change_1_bit:change_1_bit.x[1]
 a[2] => encoder:encoder.a[10]
 a[2] => checker:checker.a[10]
+a[2] => change_1_bit:change_1_bit.x[2]
 a[3] => encoder:encoder.a[11]
 a[3] => checker:checker.a[11]
+a[3] => change_1_bit:change_1_bit.x[3]
 a[4] => encoder:encoder.a[12]
 a[4] => checker:checker.a[12]
+a[4] => change_1_bit:change_1_bit.x[4]
 a[5] => encoder:encoder.a[13]
 a[5] => checker:checker.a[13]
+a[5] => change_1_bit:change_1_bit.x[5]
 a[6] => encoder:encoder.a[14]
 a[6] => checker:checker.a[14]
+a[6] => change_1_bit:change_1_bit.x[6]
 a[7] => encoder:encoder.a[15]
 a[7] => checker:checker.a[15]
+a[7] => change_1_bit:change_1_bit.x[7]
 a[8] => encoder:encoder.a[16]
 a[8] => checker:checker.a[16]
+a[8] => change_1_bit:change_1_bit.x[8]
 a[9] => encoder:encoder.a[17]
 a[9] => checker:checker.a[17]
+a[9] => change_1_bit:change_1_bit.x[9]
 a[10] => encoder:encoder.a[18]
 a[10] => checker:checker.a[18]
+a[10] => change_1_bit:change_1_bit.x[10]
 a[11] => encoder:encoder.a[19]
 a[11] => checker:checker.a[19]
+a[11] => change_1_bit:change_1_bit.x[11]
 a[12] => encoder:encoder.a[20]
 a[12] => checker:checker.a[20]
+a[12] => change_1_bit:change_1_bit.x[12]
 a[13] => encoder:encoder.a[21]
 a[13] => checker:checker.a[21]
+a[13] => change_1_bit:change_1_bit.x[13]
 a[14] => encoder:encoder.a[22]
 a[14] => checker:checker.a[22]
+a[14] => change_1_bit:change_1_bit.x[14]
 a[15] => encoder:encoder.a[23]
 a[15] => checker:checker.a[23]
-r[0] << encoder:encoder.r[0]
-r[1] << encoder:encoder.r[1]
-r[2] << encoder:encoder.r[2]
-r[3] << encoder:encoder.r[3]
-r[4] << encoder:encoder.r[4]
-r[5] << encoder:encoder.r[5]
-r[6] << encoder:encoder.r[6]
-r[7] << encoder:encoder.r[7]
-error << checker:checker.error
+a[15] => change_1_bit:change_1_bit.x[15]
+r[0] <= encoder:encoder.r[0]
+r[1] <= encoder:encoder.r[1]
+r[2] <= encoder:encoder.r[2]
+r[3] <= encoder:encoder.r[3]
+r[4] <= encoder:encoder.r[4]
+r[5] <= encoder:encoder.r[5]
+r[6] <= encoder:encoder.r[6]
+r[7] <= encoder:encoder.r[7]
+error_checker1 <= checker:checker.error
+error_checker2 <= checker:checker2.error
 
 
 |CRC16_polynomial_sol|encoder:encoder
@@ -169,6 +186,134 @@ r_sol[7] <= r_sol.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CRC16_polynomial_sol|checker:checker|OR_8bits:or_8bits
+x[0] => tmp_4.IN0
+x[1] => tmp_4.IN1
+x[2] => tmp_3.IN0
+x[3] => tmp_3.IN1
+x[4] => tmp_2.IN0
+x[5] => tmp_2.IN1
+x[6] => tmp_1.IN0
+x[7] => tmp_1.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CRC16_polynomial_sol|change_1_bit:change_1_bit
+x[0] => y[0].DATAIN
+x[1] => y[1].DATAIN
+x[2] => y[2].DATAIN
+x[3] => y[3].DATAIN
+x[4] => y[4].DATAIN
+x[5] => y[5].DATAIN
+x[6] => y[6].DATAIN
+x[7] => y[7].DATAIN
+x[8] => y[8].DATAIN
+x[9] => y[9].DATAIN
+x[10] => y[10].DATAIN
+x[11] => y[11].DATAIN
+x[12] => y[12].DATAIN
+x[13] => y[13].DATAIN
+x[14] => y[14].DATAIN
+x[15] => y[15].DATAIN
+y[0] <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= x[2].DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= x[3].DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= x[4].DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= x[5].DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= x[6].DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= x[7].DB_MAX_OUTPUT_PORT_TYPE
+y[8] <= x[8].DB_MAX_OUTPUT_PORT_TYPE
+y[9] <= x[9].DB_MAX_OUTPUT_PORT_TYPE
+y[10] <= x[10].DB_MAX_OUTPUT_PORT_TYPE
+y[11] <= x[11].DB_MAX_OUTPUT_PORT_TYPE
+y[12] <= x[12].DB_MAX_OUTPUT_PORT_TYPE
+y[13] <= x[13].DB_MAX_OUTPUT_PORT_TYPE
+y[14] <= x[14].DB_MAX_OUTPUT_PORT_TYPE
+y[15] <= x[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CRC16_polynomial_sol|checker:checker2
+a[8] => encoder_w_remainder:encoder_w_remainder.a[8]
+a[9] => encoder_w_remainder:encoder_w_remainder.a[9]
+a[10] => encoder_w_remainder:encoder_w_remainder.a[10]
+a[11] => encoder_w_remainder:encoder_w_remainder.a[11]
+a[12] => encoder_w_remainder:encoder_w_remainder.a[12]
+a[13] => encoder_w_remainder:encoder_w_remainder.a[13]
+a[14] => encoder_w_remainder:encoder_w_remainder.a[14]
+a[15] => encoder_w_remainder:encoder_w_remainder.a[15]
+a[16] => encoder_w_remainder:encoder_w_remainder.a[16]
+a[17] => encoder_w_remainder:encoder_w_remainder.a[17]
+a[18] => encoder_w_remainder:encoder_w_remainder.a[18]
+a[19] => encoder_w_remainder:encoder_w_remainder.a[19]
+a[20] => encoder_w_remainder:encoder_w_remainder.a[20]
+a[21] => encoder_w_remainder:encoder_w_remainder.a[21]
+a[22] => encoder_w_remainder:encoder_w_remainder.a[22]
+a[23] => encoder_w_remainder:encoder_w_remainder.a[23]
+r[0] => encoder_w_remainder:encoder_w_remainder.r[0]
+r[1] => encoder_w_remainder:encoder_w_remainder.r[1]
+r[2] => encoder_w_remainder:encoder_w_remainder.r[2]
+r[3] => encoder_w_remainder:encoder_w_remainder.r[3]
+r[4] => encoder_w_remainder:encoder_w_remainder.r[4]
+r[5] => encoder_w_remainder:encoder_w_remainder.r[5]
+r[6] => encoder_w_remainder:encoder_w_remainder.r[6]
+r[7] => encoder_w_remainder:encoder_w_remainder.r[7]
+error <= or_8bits:or_8bits.y
+
+
+|CRC16_polynomial_sol|checker:checker2|encoder_w_remainder:encoder_w_remainder
+a[8] => s_X_8_21.IN0
+a[8] => tmp_6.IN0
+a[9] => s_X_9_22.IN0
+a[9] => tmp_6.IN1
+a[10] => s_X_10_15.IN0
+a[10] => tmp_13.IN0
+a[11] => s_X_11_18.IN0
+a[11] => tmp_26.IN0
+a[12] => s_X_12_19.IN0
+a[12] => tmp_24.IN0
+a[13] => s_X_13_20.IN0
+a[13] => tmp_20.IN0
+a[14] => s_X_14_17.IN0
+a[14] => tmp_1.IN0
+a[14] => tmp_17.IN0
+a[14] => tmp_26.IN1
+a[15] => s_X_10_15.IN1
+a[15] => tmp_27.IN0
+a[16] => s_X_16_23.IN0
+a[17] => s_X_14_17.IN1
+a[17] => tmp_24.IN1
+a[18] => s_X_11_18.IN1
+a[18] => tmp_20.IN1
+a[19] => s_X_12_19.IN1
+a[19] => tmp_17.IN1
+a[20] => s_X_13_20.IN1
+a[20] => tmp_13.IN1
+a[21] => s_X_8_21.IN1
+a[21] => tmp_9.IN0
+a[22] => s_X_9_22.IN1
+a[22] => tmp_1.IN1
+a[23] => s_X_16_23.IN1
+a[23] => tmp_2.IN0
+a[23] => tmp_9.IN1
+r[0] => tmp_27.IN1
+r[1] => tmp_25.IN1
+r[2] => tmp_21.IN1
+r[3] => tmp_18.IN1
+r[4] => tmp_14.IN1
+r[5] => tmp_10.IN1
+r[6] => tmp_8.IN1
+r[7] => tmp_2.IN1
+r_sol[0] <= r_sol.DB_MAX_OUTPUT_PORT_TYPE
+r_sol[1] <= r_sol.DB_MAX_OUTPUT_PORT_TYPE
+r_sol[2] <= r_sol.DB_MAX_OUTPUT_PORT_TYPE
+r_sol[3] <= r_sol.DB_MAX_OUTPUT_PORT_TYPE
+r_sol[4] <= r_sol.DB_MAX_OUTPUT_PORT_TYPE
+r_sol[5] <= r_sol.DB_MAX_OUTPUT_PORT_TYPE
+r_sol[6] <= r_sol.DB_MAX_OUTPUT_PORT_TYPE
+r_sol[7] <= r_sol.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CRC16_polynomial_sol|checker:checker2|OR_8bits:or_8bits
 x[0] => tmp_4.IN0
 x[1] => tmp_4.IN1
 x[2] => tmp_3.IN0
